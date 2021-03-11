@@ -1,0 +1,26 @@
+
+#bag{
+    background-image: url(../img/kits/bolso.jpg);
+}
+#shawl{
+    background-image: url(../img/kits/chal.jpg);
+}
+#sweater{
+    background-image: url(../img/kits/jersey.jpg);
+}
+#cap{
+    background-image: url(../img/kits/gorro.jpg);
+}
+#blanket-xl{
+    background-image: url(../img/kits/mantaxl.jpg);
+}
+#blanket{
+    background-image: url(../img/kits/toquilla.jpg);
+}
+#embroidery{
+    background-image: url(../img/kits/cuadro.jpg);
+}
+#kits-section .content, #wool-section .content, #accessories-section .content, #cloth-section .content{
+    width: 100%;
+}
+

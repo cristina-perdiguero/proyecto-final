@@ -1,0 +1,111 @@
+#wool-1{
+    background-image: url("../img/lana/p-lana1.jpg");
+}
+#wool-2{
+    background-image: url("../img/lana/p-lana12.jpg");
+}
+#wool-3{
+    background-image: url("../img/lana/p-lana3.jpg");
+}
+#wool-4{
+    background-image: url("../img/lana/p-lana4.jpg");
+}
+#wool-5{
+    background-image: url("../img/lana/p-lana6.jpg");
+}
+#wool-6{
+    background-image: url("../img/lana/p-lana7.jpg");
+}
+#wool-7{
+    background-image: url("../img/lana/p-lana8.jpg");
+}
+#wool-8{
+    background-image: url("../img/lana/p-lana9.jpg");
+    background-position: left;
+}
+#wool-9{
+    background-image: url("../img/lana/p-lana10.jpg");
+}
+#wool-10{
+    background-image: url("../img/lana/p-lana11.jpg");
+}
+#wool-11{
+    background-image: url("../img/lana/hilos.jpg");
+    background-position: top;
+}
+#wool-12{
+    background-image: url("../img/lana/hilo2.jpg");
+    background-position: right;
+}
+/* desplegable select*/
+.product .color-dropdown{
+    height: max-content;
+    position: relative;
+    z-index: var(--front);
+    margin: 10px;
+    border-radius: 0;
+    padding: 5px;
+}
+#wool-section .product>p{
+    margin-bottom: 0;
+}
+.color-dropdown p{
+    margin: 0;
+}
+.color-dropdown>div{
+    position: absolute;
+    width: 100%;
+}
+.color-dropdown li>div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.color-dropdown li, .disabled{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 5px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.color-dropdown li:hover{
+    background-color: var(--white);
+}
+.disabled{
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--white);
+    padding-bottom: 10px;
+    z-index: var(--front);
+}
+.color-dropdown li:first-child{
+    margin-top: 15px;
+}
+.color-dropdown ul{
+    padding: 0;
+    margin: 0;
+}
+.color-dropdown .option>p{
+    color: var(--primary-color);
+    font-family: var(--principal-font);
+    font-weight: bold;
+}
+.show-color{
+    animation: checkcolor 1s linear 1 forwards;
+}
+@keyframes checkcolor{
+    0%{
+        position: absolute;
+        top: 0;
+    }
+    100%{
+        position: relative;
+        top: auto;
+    }
+}
+#wool-section button{
+    margin-top: 35px;
+}

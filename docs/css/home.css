@@ -1,0 +1,98 @@
+/*hero img*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/hero-img.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    position: relative;
+}
+.hero h1{
+    font-family: var(--principal-font);
+}
+/*cookies*/
+.cookies{
+   text-align: center;
+   width: 100%;
+   padding: 10px;
+   backdrop-filter: blur(8px); 
+   position: fixed;
+   bottom: 0; 
+   border-radius: 20px;
+   color: var(--white);
+   right: 100%;
+   transition: right;
+   z-index: var(--front);
+   transition-duration: 1s;
+}
+.show-cookies{
+    transition-delay: 2s;
+    right: 0;
+}
+/*clase para cookies*/
+.dark{ 
+    color: var(--primary-color);
+}
+/*categorías*/
+main{
+    text-align: center;
+}
+main button a, main, footer a{
+    color: var(--primary-color); 
+}
+main .container:first-child{
+    background-color: var(--white);
+}
+.content{
+    opacity: 0%;
+    padding: 80px 20px;
+    position: relative;
+    top: 50px;
+}
+#workshop, #contact{
+    padding: 50px 0;
+}
+#workshop .cta a{
+    color: var(--white);
+}
+#workshop h2, #workshop p span, #contact h2, #contact p span{
+    font-style: italic;
+    font-weight: bolder;
+}
+#workshop h2 span, #contact h2 span{
+    font-family: var(--principal-font);
+    font-style: initial;
+}
+.container> img{
+    opacity: 0;
+}
+@media (min-width: 768px){
+    .hero h1{
+        font-family: var(--principal-font);
+        font-size: 4rem;
+    }
+    .hero h2{
+        font-size: 2rem;
+    }
+    main .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #workshop div:nth-child(2){
+        width: 50%;
+        padding: 20px 0;
+    }
+    #workshop div:nth-child(2), #contact div:nth-child(2){
+        display: flex;
+        justify-content: center;
+    }
+    main .container:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+}

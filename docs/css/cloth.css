@@ -1,0 +1,68 @@
+#cloth1{
+    background-image: url(../img/tela/tela1.jpg);
+}
+#cloth2{
+    background-image: url(../img/tela/tela2.jpg);
+}
+#cloth3{
+    background-image: url(../img/tela/tela3.jpg);
+}
+#cloth4{
+    background-image: url(../img/tela/tela4.jpg);
+}
+#cloth5{
+    background-image: url(../img/tela/tela5.jpg);
+}
+#cloth6{
+    background-image: url(../img/tela/tela6.jpg);
+}
+#cloth7{
+    background-image: url(../img/tela/tela7.jpg);
+}
+#cloth8{
+    background-image: url(../img/tela/tela8.jpg);
+}
+#cloth9{
+    background-image: url(../img/tela/tela9.jpg);
+}
+#cloth10{
+    background-image: url(../img/tela/tela10.jpg);
+}
+#cloth11{
+    background-image: url(../img/tela/tela11.jpg);
+}
+#cloth12{
+    background-image: url(../img/tela/tela12.jpg);
+}
+#cloth13{
+    background-image: url(../img/tela/tela13.jpg);
+}
+#cloth14{
+    background-image: url(../img/tela/tela14.jpg);
+}
+#cloth15{
+    background-image: url(../img/tela/tela15.jpg);
+}
+#cloth16{
+    background-image: url(../img/tela/tela16.jpg);
+}
+#cloth17{
+    background-image: url(../img/tela/tela17.jpg);
+}
+#cloth18{
+    background-image: url(../img/tela/tela18.jpg);
+}
+#cloth19{
+    background-image: url(../img/tela/tela19.jpg);
+}
+#cloth20{
+    background-image: url(../img/tela/tela20.jpg);
+}
+#cloth-section input{
+    width: 20%;
+    border-bottom: 1px solid var(--primary-color);
+    text-align: center;
+}
+#cloth-section label{
+    color: var(--primary-color);
+}

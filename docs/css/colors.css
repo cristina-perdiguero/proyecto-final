@@ -1,0 +1,81 @@
+
+/*muestras de colores*/
+.color1{
+    background-color: #317873;
+}
+.color2{
+    background-color: #a0d6b4;
+}
+.color3{
+    background-color: #dcedc1;
+}
+.color4{
+    background-color: #ff8b94;
+}
+.color5{
+    background-color: #ffd3b6;
+}
+.color6{
+    background-color: #a70000;
+}
+.color7{
+    background-color: #ff0000;
+}
+.color8{
+    background-color: #ff7b7b;
+}
+.color9{
+    background-color: #fc913a;
+}
+.color10{
+    background-color: #f9d62e;
+}
+.color11{
+    background-color: #eae374;
+}
+.color12{
+    background-color: #ff7400;
+}
+.color13{
+    background-color: #ff4d00;
+}
+.color14{
+    background-color: #efbbff;
+}
+.color15{
+    background-color:#be29ec;
+}
+.color16{
+    background-color:#660066;
+}
+.color17{
+    background-color:#74d600;
+}
+.color18{
+    background-color: #00d27f;
+}
+.color19{
+    background-color: #00ff83;
+}
+.color20{
+    background-color: #ffffff;
+    border: 1px solid var(--primary-color)
+}
+.color21{
+    background-color: #f0e2a8;
+}
+.color22{
+    background-color: #fff68f;
+}
+.color23{
+    background-color: #999999;
+}
+.color24{
+    background-color: #555555;
+}
+.color25{
+    background-color:#111111;
+}
+.color26{
+    background: linear-gradient(90deg, #660066 0%,#660066 50%, #a70000 50%,#a70000 100% );
+}

@@ -1,0 +1,82 @@
+@import url(components.css); 
+@import url(home.css); 
+@import url(contact.css); 
+@import url(workshop.css); 
+@import url(kits.css); 
+@import url(wool.css); 
+@import url(cloth.css); 
+@import url(colors.css); 
+@import url(accesories.css); 
+:root{
+    /*fuentes*/
+    --principal-font: 'Julius Sans One', sans-serif;
+    --secondary-font: 'Crimson Text', serif;
+    /*colores*/
+    --black: #222222; 
+    --white: #f2f2f2; 
+    --primary-color: #2e3241; 
+    --secondary-color: #9a2122; 
+    --primary-lighter-color: #756d82; 
+    /*capas*/
+    --middle: 500; 
+    --front:1000; 
+    --loader: 10000; 
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+/*clases para js*/
+.hidden{
+    overflow: hidden;
+}
+.show-cart{
+    right: 0;
+}
+.show-menu{
+    left: 0;
+}
+.x-menu_second{
+    display: none;
+ }
+.x-menu_third{
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 40%
+ }
+.x-menu_first{
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 40%
+}
+.show-questions{
+    display: block;
+}
+.show-booking{
+    display: flex;
+}
+.show-section{
+    animation: show 0.5s linear 1;
+    animation-fill-mode: forwards;
+}
+@keyframes show {
+    0%{
+        opacity: 0%;
+        top: 50px;
+    }
+    100%{
+        opacity: 100%;
+        top: 0;
+    }
+}
+.button-hidden{
+    display: none;
+}
