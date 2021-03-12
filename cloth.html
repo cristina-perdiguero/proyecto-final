@@ -14,7 +14,7 @@
     <header>
         <div class="loader">
             <div class="loader-container"> 
-                <img src="img/ovillo.png" alt="">
+                <img src="img/loader.svg" alt="">
             </div>
         </div>    
         <nav class="nav-menu">
@@ -40,10 +40,10 @@
                        <a href="wool.html">Lanas</a> 
                     </li>
                     <li class="list-item">
-                        <a href="cloth.html">Telas</a> 
+                        <a id="actual-page" href="cloth.html">Telas</a> 
                      </li>
                      <li class="list-item">
-                        <a id="actual-page" href="accessories.html">Accesorios</a> 
+                        <a href="accessories.html">Accesorios</a> 
                      </li>
                      <li class="list-item">
                         <a href="kits.html">Kits</a> 
@@ -105,66 +105,173 @@
             </div>
         </div>
     </header>
-    <main class="general-close" id="accessories-section">
+    <main class="general-close" id="cloth-section">
         <section class="products-section contact-section content">
             <div>
-                <h2>Accesorios</h2>
+                <h2>Telas</h2>
+                <p><span>Todas nuestras telas se venden por unidades de metro. Recibirás las unidades en una sola pieza.<br>Es decir, si eliges 2 unidades, recibirás en casa una pieza completa de 2 metros.</span></p>
             </div>
             <div class="contact-section products-section ">    
                 <div class="product">
-                    <div id="accessorie-1">
+                    <div id="cloth1">
                     </div>
-                    <p><span>Agujas de ganchillo</span><br> 3,50€</p>
+                    <p><span>Tela hada estampada algodón</span><br> 7,50€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
                     <button class="add-product">Añadir al carrito</button>
-                </div>
+                </div> 
                 <div class="product">
-                    <div id="accessorie-2">
+                    <div id="cloth2">
                     </div>
-                    <p><span>Agujas para punto de madera</span><br> 4,50€</p>
+                    <p><span>Tela flores estampada algodón</span><br> 5,99€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
                     <button class="add-product">Añadir al carrito</button>
-                </div>
+                </div> 
                 <div class="product">
-                    <div id="accessorie-3">
+                    <div id="cloth3">
                     </div>
-                    <p><span>Agujas para punto metálicas</span><br> 2,50€</p>
+                    <p><span>Tela estampada algodón</span><br> 4,50€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
                     <button class="add-product">Añadir al carrito</button>
-                </div>
+                </div> 
                 <div class="product">
-                    <div id="accessorie-4">
+                    <div id="cloth4">
                     </div>
-                    <p><span>Bastidor</span><br> 6,90€</p>
+                    <p><span>Tela rayada algodón</span><br> 3,99€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
                     <button class="add-product">Añadir al carrito</button>
-                </div>
+                </div> 
                 <div class="product">
-                    <div id="accessorie-5">
+                    <div id="cloth5">
                     </div>
-                    <p><span>Telar</span><br> 40,00€</p>
+                    <p><span>Popelín golden algodón</span><br> 5,50€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
                     <button class="add-product">Añadir al carrito</button>
-                </div>
+                </div> 
                 <div class="product">
-                    <div id="accessorie-6">
+                    <div id="cloth6">
                     </div>
-                    <p><span>Tijeras largas</span><br> 10,00€</p>
+                    <p><span>Tela estampada algodón</span><br> 4,50€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
                     <button class="add-product">Añadir al carrito</button>
-                </div>
+                </div> 
                 <div class="product">
-                    <div id="accessorie-7">
+                    <div id="cloth7">
                     </div>
-                    <p><span>Tijeras de mariposa</span><br> 9,90€</p>
+                    <p><span>Tela lentejuelas</span><br> 6,00€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
                     <button class="add-product">Añadir al carrito</button>
-                </div>
+                </div> 
                 <div class="product">
-                    <div id="accessorie-8">
+                    <div id="cloth8">
                     </div>
-                    <p><span>Cortador circular</span><br> 20€</p>
+                    <p><span>Tela estampada fireworks</span><br> 4,99€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
                     <button class="add-product">Añadir al carrito</button>
-                </div>
+                </div> 
                 <div class="product">
-                    <div id="accessorie-9">
+                    <div id="cloth9">
                     </div>
-                    <p><span>Cinta métrica</span><br> 1,00€</p>
+                    <p><span>Denim</span><br> 5,00€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
                     <button class="add-product">Añadir al carrito</button>
-                </div>
+                </div> 
+                <div class="product">
+                    <div id="cloth10">
+                    </div>
+                    <p><span>Popelín estrellas </span><br> 4,90€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
+                <div class="product">
+                    <div id="cloth11">
+                    </div>
+                    <p><span>Tela estampada rosas algodón</span><br> 5,50€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
+                <div class="product">
+                    <div id="cloth12">
+                    </div>
+                    <p><span>Tela de borreguito sintético</span><br> 4,00€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
+                <div class="product">
+                    <div id="cloth13">
+                    </div>
+                    <p><span>Lino a rayas</span><br> 4,50€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
+                <div class="product">
+                    <div id="cloth14">
+                    </div>
+                    <p><span>Tela brillo universe</span><br> 4,00€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
+                <div class="product">
+                    <div id="cloth15">
+                    </div>
+                    <p><span>Popelín algodón</span><br> 3,50€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
+                <div class="product">
+                    <div id="cloth16">
+                    </div>
+                    <p><span>Popelín algodón</span><br> 3,50€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
+                <div class="product">
+                    <div id="cloth17">
+                    </div>
+                    <p><span>Popelín algodón</span><br> 3,50€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
+                <div class="product">
+                    <div id="cloth18">
+                    </div>
+                    <p><span>Tela cuadros algodón</span><br> 4,50€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
+                <div class="product">
+                    <div id="cloth19">
+                    </div>
+                    <p><span>Crepé plisado</span><br> 5,90€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
+                <div class="product">
+                    <div id="cloth20">
+                    </div>
+                    <p><span>Tela estampada tropical</span><br> 4,00€</p>
+                    <label for="meter">Unidades</label>
+                    <input type="number" name="meter" id="meter" min="1" max="10" value="1">
+                    <button class="add-product">Añadir al carrito</button>
+                </div> 
         </section>
     </main>
     <footer class="general-close">

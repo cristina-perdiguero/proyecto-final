@@ -14,7 +14,7 @@
     <header>
         <div class="loader">
             <div class="loader-container"> 
-                <img src="img/ovillo.png" alt="">
+                <img src="img/loader.svg" alt="">
             </div>
         </div>    
         <nav class="nav-menu">
@@ -52,7 +52,7 @@
                         <a href="workshop.html">Talleres</a> 
                      </li>
                      <li class="list-item">
-                        <a id="actual-page" href="contact.html">Contacto</a> 
+                        <a href="contact.html">Contacto</a> 
                      </li>
                 </ul>
             </div> 
@@ -72,6 +72,13 @@
                 </div>
             </div>
         </nav>
+        <div class="hero general-close">
+            <h1>The knitter</h1>
+            <h2>Tu tienda de lanas</h2>
+            <button class="cta">
+                <a href="wool.html">Comprar ahora</a>
+            </button>
+        </div>
         <div class="questions">
             <div class="questions-btn">
                 <i class="fas fa-question"></i>
@@ -104,30 +111,18 @@
                 </div>
             </div>
         </div>
-    </header>
-    <main class="general-close" >
-        <section class="container text-left" id="contact">
+        <div class="cookies">
+            <i class="fas fa-cookie-bite"></i>
+            <p>Esta web utiliza <span><a class="cookies-link" href="#">cookies</a></span> propias y de <span> <a class="cookies-link"href="#">terceros</a></span> para ofrecerle una mejor experiencia y servicio</p>
+            <button class="close-cookies">Aceptar</button>
+            <button class="close-cookies">Rechazar</button>
+        </div>
+        <section class="workshop-form" >
             <div class="content contact-section">
-                <h1><span>¡Ven a vernos!</span></h1>
-                <p>
-                Puedes visitarnos cuando quieras, en nuestra tienda física encontrarás todos los productos de la tienda online. Podrás ver y tocar todas las <span>lanas</span> y <span>accesorios</span> que tenemos y ver ejemplos de proyectos realizados con los materiales a la venta.
-                </p>
-                <h2><span>Horario</span></h2>
-                <p><span> Lunes a Sábado:</span><br> 10:00h a 14.00h <br> 17.00h a 20.00h</p>
-                <p><span> Domingo:</span><br>Cerrado</p>
-                <h2><span>Dirección</span></h2>
-                <p>C/Avenida Constitución 33 Móstoles, Madrid.</p>
-                <p><span>Teléfono:</span><br>912222222</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1520.8852877452146!2d-3.8635818281594445!3d40.325249015879905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418c2a6400f285%3A0xea324658da98ead8!2sAv.%20de%20la%20Constitucion%2C%2033%2C%2028931%20M%C3%B3stoles%2C%20Madrid!5e0!3m2!1ses!2ses!4v1614593522757!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="content contact-section" >
-                
-            </div>
-        </section>
-        <section class="container" id="form">
-            <div class="content contact-section" >
-                <h1><span>¡O ponte en contacto con nosotros!</span></h1>
-                <form action="" method="post">
+                <div class="close-form"></div>
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+                <h1><span>¡Apúntate!</span></h1>
+                <form action="#" method="post">
                     <div>
                         <label for="name">Nombre</label>
                         <input type="text" name="name" id="name" placeholder="Tu nombre" required>
@@ -145,8 +140,13 @@
                         <input type="tel" name="telephone" id="telephone" placeholder="Tu número" required>
                     </div>
                     <div>
-                        <label for="doubt" aria-required="">Consulta</label>
-                        <textarea name="doubt" id="doubt" cols="30" rows="10"></textarea>
+                        <label for="doubt" aria-required="">Taller</label>
+                        <select name="workshop" id="select-workshop">
+                            <option value="1" disabled>Elige tu taller</option>
+                            <option value="2">Amigurumis</option>
+                            <option value="3">Tejido de tapices en telar</option>
+                            <option value="4">Costura creativa</option>
+                        </select>
                     </div>
                     <div>
                         <input type="checkbox" name="conditions" id="conditions" required>
@@ -156,7 +156,75 @@
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </button>
                 </form>
+            </div>  
+        </section>
+    </header>
+    <main class="general-close">
+        <section class="container text-left" id="workshop">
+            <div class="content workshop">
+                <h2>Próximo taller: <span>Amigurumis</span></h2>
+                <p> <span>En este taller aprenderás: </span>En el taller de amigurumis te enseñaremos las técnicas básicas del ganchillo para que puedas crear muñecos basados en patrones o ilustraciones y te adentres así en el mundo de los amigurumis.</p>
+                <p><span>Fecha: </span> 1 Abril <br> 11.00h a 13.00h</p>
+                <button class="cta booking"> 
+                    Apuntarme 
+                </button>
+                <button> 
+                    <a href="workshop.html">Más talleres</a> 
+                </button>
             </div>
+            <div class="content workshop" >
+                <img src="img/2.jpg" alt="amigurumi">
+            </div>
+        </section>
+        <section class="container" id="wool">
+            <div class="content wool">
+                <h2>Lanas e hilos</h2>
+                <p>Busca entre nuestras lanas e hilos tus favoritos para realizar todos tus proyectos.</p>
+                <button> 
+                    <a href="wool.html">Ver lanas</a> 
+                </button>
+            </div>
+            <img class="wool" src="img/lanas.jpg" alt="lana">
+        </section>
+        <section class="container" id="cloth">
+            <div class="content cloth">
+                <h2>Telas</h2>
+                <p>En nuestra sección de telas podrás escoger entre una gran variedad en colores y patrones.</p>
+                <button> 
+                    <a href="cloth.html">Ver telas</a> 
+                </button>
+            </div>
+            <img class="cloth" src="img/telas.jpg" alt="rollos de tela">
+        </section>
+        <section class="container" id="accessories"> 
+            <div class="content accessories">
+                <h2>Accesorios</h2>
+                <p>Si buscas en nuestra sección de accesorios podrás encontrar todos los utensilios necesarios para tus proyectos.</p>
+                <button> 
+                    <a href="accessories.html">Ver accesorios</a> 
+                </button>
+            </div>
+            <img class="accessories" src="img/accesorios.jpg" alt="accesorios de punto">
+        </section>
+        <section class="container" id="kit">
+            <div class="content kit">
+                <h2>Kits</h2>
+                <p>Visita nuestros kits, aquí podrás encontrar todos los materiales necesarios para llevar a cabo las ideas que te proponemos.</p>
+                <button> 
+                    <a href="kits.html">Ver kits</a> 
+                </button>
+            </div>
+            <img  class="kit" src="img/kits.jpg" alt="kits de lana">
+        </section>
+        <section class="container" id="workshop2">
+            <div class="content workshop2">
+                <h2>Talleres</h2>
+                <p>Si quieres aprender nuevas técnicas apúntate a nuestros talleres.</p>
+                <button> 
+                    <a href="workshop.html">Ver talleres</a> 
+                </button>
+            </div>
+            <img class="workshop2" src="img/taller.jpg" alt="lana">
         </section>
     </main>
     <footer class="general-close">

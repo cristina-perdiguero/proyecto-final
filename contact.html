@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica final</title>
+    <title>Proyecto Final</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Julius+Sans+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b1fb0d435a.js" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
     <header>
         <div class="loader">
             <div class="loader-container"> 
-                <img src="img/ovillo.png" alt="">
+                <img src="img/loader.svg" alt="">
             </div>
         </div>    
         <nav class="nav-menu">
@@ -49,10 +49,10 @@
                         <a href="kits.html">Kits</a> 
                      </li>
                      <li class="list-item">
-                        <a id="actual-page" href="workshop.html">Talleres</a> 
+                        <a href="workshop.html">Talleres</a> 
                      </li>
                      <li class="list-item">
-                        <a href="contact.html">Contacto</a> 
+                        <a id="actual-page" href="contact.html">Contacto</a> 
                      </li>
                 </ul>
             </div> 
@@ -105,13 +105,29 @@
             </div>
         </div>
     </header>
-    <main class="general-close">
-        <section class="workshop-form" >
+    <main class="general-close" >
+        <section class="container text-left" id="contact">
             <div class="content contact-section">
-                <div class="close-form"></div>
-                <button class="close-btn"><i class="fas fa-times"></i></button>
-                <h1><span>¡Apúntate!</span></h1>
-                <form action="#" method="post">
+                <h1><span>¡Ven a vernos!</span></h1>
+                <p>
+                Puedes visitarnos cuando quieras, en nuestra tienda física encontrarás todos los productos de la tienda online. Podrás ver y tocar todas las <span>lanas</span> y <span>accesorios</span> que tenemos y ver ejemplos de proyectos realizados con los materiales a la venta.
+                </p>
+                <h2><span>Horario</span></h2>
+                <p><span> Lunes a Sábado:</span><br> 10:00h a 14.00h <br> 17.00h a 20.00h</p>
+                <p><span> Domingo:</span><br>Cerrado</p>
+                <h2><span>Dirección</span></h2>
+                <p>C/Avenida Constitución 33 Móstoles, Madrid.</p>
+                <p><span>Teléfono:</span><br>912222222</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1520.8852877452146!2d-3.8635818281594445!3d40.325249015879905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418c2a6400f285%3A0xea324658da98ead8!2sAv.%20de%20la%20Constitucion%2C%2033%2C%2028931%20M%C3%B3stoles%2C%20Madrid!5e0!3m2!1ses!2ses!4v1614593522757!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="content contact-section" >
+                
+            </div>
+        </section>
+        <section class="container" id="form">
+            <div class="content contact-section" >
+                <h1><span>¡O ponte en contacto con nosotros!</span></h1>
+                <form action="" method="post">
                     <div>
                         <label for="name">Nombre</label>
                         <input type="text" name="name" id="name" placeholder="Tu nombre" required>
@@ -129,13 +145,8 @@
                         <input type="tel" name="telephone" id="telephone" placeholder="Tu número" required>
                     </div>
                     <div>
-                        <label for="doubt" aria-required="">Taller</label>
-                        <select name="workshop" id="select-workshop">
-                            <option value="1" disabled>Elige tu taller</option>
-                            <option value="2">Amigurumis</option>
-                            <option value="3">Tejido de tapices en telar</option>
-                            <option value="4">Costura creativa</option>
-                        </select>
+                        <label for="doubt" aria-required="">Consulta</label>
+                        <textarea name="doubt" id="doubt" cols="30" rows="10"></textarea>
                     </div>
                     <div>
                         <input type="checkbox" name="conditions" id="conditions" required>
@@ -145,74 +156,6 @@
                         <i class="fas fa-long-arrow-alt-right"></i>
                     </button>
                 </form>
-            </div>  
-        </section>
-        <section class="container workshop-section" id="first-w">
-            <div class="content contact-section">
-                <h2>Próximo taller: <span>Amigurumis</span></h2>
-                <p><span> En este taller aprenderás: </span><br>En nuestro espacio creativo te enseñaremos las técnicas básicas del ganchillo para que puedas crear muñecos basados en patrones o ilustraciones y te adentres así en el mundo de los amigurumis.</p>
-                <p><span>Fecha:</span><br>Abril <br>11.00h a 13.00h</p>
-                <p><span>Precio:</span><br> 40€</p>
-                <div class="ad contact-section">
-                    <p><span>¡Quedan muy pocas plazas,<br> reserva la tuya ahora!</span></p>
-                    <button class="cta booking">Reservar</button>
-                </div>
-            </div>
-            <div class="content contact-section" >
-            </div>
-        </section>
-        <section class="container workshop-section " id="second-w">
-            <div class="content contact-section">
-                <h2> <span>Tejido de tapices en telar</span></h2>
-                <p><span> En este taller aprenderás: </span><br>Con el curso de tejido de tapices en telar te enseñaremos los pasos para tejer tu propia tapicería a través de la manipulación de los hilos y colores. De esta manera podrás dar vida a una exclusiva pieza decorativa.</p>
-                <p><span>Fecha:</span><br>10 Abril <br>11.00h a 13.00h</p>
-                <p><span>Precio:</span><br> 40€</p>
-                <button class="cta booking">Apuntarme</button>
-            </div>
-            <div class="content contact-section" >
-            </div>
-        </section>
-        <section class="container workshop-section" id="third-w">
-            <div class="content contact-section">
-                <h2><span>Costura creativa</span></h2>
-                <p><span> En este taller aprenderás: </span><br> En nuestro espacio creativo aprenderás las técnicas básicas de la costura  desde cero y cómo sacarle el mayor partido a tu máquina de coser. Además realizarás una pieza original y personalizada.</p>
-                <p><span>Fecha:</span><br> 17 Abril <br>11.00h a 13.00h</p>
-                <p><span>Precio:</span><br> 40€</p>
-                <button class="cta booking">Apuntarme</button>
-            </div>
-            <div class="content contact-section" >
-            </div>
-        </section>
-        <section class="container text-left workshop-section">
-            <div class="content contact-section">
-                <h2><span>Nuevos talleres</span></h2>
-                <p><span>Estamos preparando nuevos talleres que poder ofrecerte:</span><br></p>
-                <ul>
-                    <li>Patchwork</li>
-                    <li>Bordado. Reparación de prendas</li>
-                    <li>Needlepainting</li>
-                    <li>Bordado con aguja mágica</li>
-                </ul>
-                <div class="newsletter ">
-                    <form action="" method="post">
-                        <p>Si quieres estar al tanto de las fechas en las que estarán disponibles y los nuevos cursos que estamos preparando, suscríbete a nuestra newsletter, donde te tendremos al día de las últimas novedades.</p>
-                        <label for="newsletter">Suscríbete a nuestra newsletter</label>
-                        <input type="email" name="newsletter" id="ad-newsletter" placeholder="Tu email" required>
-                        <button class="cta">Suscribirme</button>
-                    </form>
-                </div>
-            </div>
-            <div class="content contact-section covid-info">
-                <h2><span>Medidas de seguridad</span></h2>
-                <p><span>Para cumplir con el protocolo establecido para Covid-19 hemos adaptado nuestro taller con las medidas de seguridad e higine necesarias:</span><br></p>
-                <p><span>Antes de venir recuerda:</span>  si tienes <span>síntomas</span>, has tenido <span> contacto estrecho con un positivo</span> o estás en <span>cuarentena</span>, no asistas. En estos casos la cancelación será considerada por fuerza mayor y recibirás el reembolso completo del precio del taller.</p>
-                <ul>
-                    <li>Tanto el acceso al local como la salida se realizarán de forma ordenada para evitar aglomeraciones en la entrada.</li>
-                    <li>Es obligatoria la desinfección de manos con gel hidroalcohólico al llegar al local.</li>
-                    <li>El correcto uso de la mascarilla es obligatorio.</li>
-                    <li>Cada asistente tendrá el asiento asignado. Es obligatorio mantener la distribución de la sala para así garantizar la separación de seguridad entre todos.</li>
-                </ul>
-                <p><span>Recuerda que estas medidas son importantes para cuidarnos entre todos y para que podamos disfrutar de un taller seguro.</span><br></p>
             </div>
         </section>
     </main>

@@ -70,6 +70,7 @@ input:focus{
     }
     .loader-container img{
         width: 100%;
+        height: 100%;
         animation: rodar 5s linear infinite;  
     }
     @keyframes rodar{

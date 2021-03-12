@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Final</title>
+    <title>Práctica final</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Julius+Sans+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b1fb0d435a.js" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
     <header>
         <div class="loader">
             <div class="loader-container"> 
-                <img src="img/ovillo.png" alt="">
+                <img src="img/loader.svg" alt="">
             </div>
         </div>    
         <nav class="nav-menu">
@@ -49,7 +49,7 @@
                         <a href="kits.html">Kits</a> 
                      </li>
                      <li class="list-item">
-                        <a href="workshop.html">Talleres</a> 
+                        <a id="actual-page" href="workshop.html">Talleres</a> 
                      </li>
                      <li class="list-item">
                         <a href="contact.html">Contacto</a> 
@@ -72,13 +72,6 @@
                 </div>
             </div>
         </nav>
-        <div class="hero general-close">
-            <h1>The knitter</h1>
-            <h2>Tu tienda de lanas</h2>
-            <button class="cta">
-                <a href="wool.html">Comprar ahora</a>
-            </button>
-        </div>
         <div class="questions">
             <div class="questions-btn">
                 <i class="fas fa-question"></i>
@@ -111,12 +104,8 @@
                 </div>
             </div>
         </div>
-        <div class="cookies">
-            <i class="fas fa-cookie-bite"></i>
-            <p>Esta web utiliza <span><a class="cookies-link" href="#">cookies</a></span> propias y de <span> <a class="cookies-link"href="#">terceros</a></span> para ofrecerle una mejor experiencia y servicio</p>
-            <button class="close-cookies">Aceptar</button>
-            <button class="close-cookies">Rechazar</button>
-        </div>
+    </header>
+    <main class="general-close">
         <section class="workshop-form" >
             <div class="content contact-section">
                 <div class="close-form"></div>
@@ -158,73 +147,73 @@
                 </form>
             </div>  
         </section>
-    </header>
-    <main class="general-close">
-        <section class="container text-left" id="workshop">
-            <div class="content workshop">
+        <section class="container workshop-section" id="first-w">
+            <div class="content contact-section">
                 <h2>Próximo taller: <span>Amigurumis</span></h2>
-                <p> <span>En este taller aprenderás: </span>En el taller de amigurumis te enseñaremos las técnicas básicas del ganchillo para que puedas crear muñecos basados en patrones o ilustraciones y te adentres así en el mundo de los amigurumis.</p>
-                <p><span>Fecha: </span> 1 Abril <br> 11.00h a 13.00h</p>
-                <button class="cta booking"> 
-                    Apuntarme 
-                </button>
-                <button> 
-                    <a href="workshop.html">Más talleres</a> 
-                </button>
+                <p><span> En este taller aprenderás: </span><br>En nuestro espacio creativo te enseñaremos las técnicas básicas del ganchillo para que puedas crear muñecos basados en patrones o ilustraciones y te adentres así en el mundo de los amigurumis.</p>
+                <p><span>Fecha:</span><br>Abril <br>11.00h a 13.00h</p>
+                <p><span>Precio:</span><br> 40€</p>
+                <div class="ad contact-section">
+                    <p><span>¡Quedan muy pocas plazas,<br> reserva la tuya ahora!</span></p>
+                    <button class="cta booking">Reservar</button>
+                </div>
             </div>
-            <div class="content workshop" >
-                <img src="img/2.jpg" alt="amigurumi">
+            <div class="content contact-section" >
             </div>
         </section>
-        <section class="container" id="wool">
-            <div class="content wool">
-                <h2>Lanas e hilos</h2>
-                <p>Busca entre nuestras lanas e hilos tus favoritos para realizar todos tus proyectos.</p>
-                <button> 
-                    <a href="wool.html">Ver lanas</a> 
-                </button>
+        <section class="container workshop-section " id="second-w">
+            <div class="content contact-section">
+                <h2> <span>Tejido de tapices en telar</span></h2>
+                <p><span> En este taller aprenderás: </span><br>Con el curso de tejido de tapices en telar te enseñaremos los pasos para tejer tu propia tapicería a través de la manipulación de los hilos y colores. De esta manera podrás dar vida a una exclusiva pieza decorativa.</p>
+                <p><span>Fecha:</span><br>10 Abril <br>11.00h a 13.00h</p>
+                <p><span>Precio:</span><br> 40€</p>
+                <button class="cta booking">Apuntarme</button>
             </div>
-            <img class="wool" src="img/lanas.jpg" alt="lana">
+            <div class="content contact-section" >
+            </div>
         </section>
-        <section class="container" id="cloth">
-            <div class="content cloth">
-                <h2>Telas</h2>
-                <p>En nuestra sección de telas podrás escoger entre una gran variedad en colores y patrones.</p>
-                <button> 
-                    <a href="cloth.html">Ver telas</a> 
-                </button>
+        <section class="container workshop-section" id="third-w">
+            <div class="content contact-section">
+                <h2><span>Costura creativa</span></h2>
+                <p><span> En este taller aprenderás: </span><br> En nuestro espacio creativo aprenderás las técnicas básicas de la costura  desde cero y cómo sacarle el mayor partido a tu máquina de coser. Además realizarás una pieza original y personalizada.</p>
+                <p><span>Fecha:</span><br> 17 Abril <br>11.00h a 13.00h</p>
+                <p><span>Precio:</span><br> 40€</p>
+                <button class="cta booking">Apuntarme</button>
             </div>
-            <img class="cloth" src="img/telas.jpg" alt="rollos de tela">
+            <div class="content contact-section" >
+            </div>
         </section>
-        <section class="container" id="accessories"> 
-            <div class="content accessories">
-                <h2>Accesorios</h2>
-                <p>Si buscas en nuestra sección de accesorios podrás encontrar todos los utensilios necesarios para tus proyectos.</p>
-                <button> 
-                    <a href="accessories.html">Ver accesorios</a> 
-                </button>
+        <section class="container text-left workshop-section">
+            <div class="content contact-section">
+                <h2><span>Nuevos talleres</span></h2>
+                <p><span>Estamos preparando nuevos talleres que poder ofrecerte:</span><br></p>
+                <ul>
+                    <li>Patchwork</li>
+                    <li>Bordado. Reparación de prendas</li>
+                    <li>Needlepainting</li>
+                    <li>Bordado con aguja mágica</li>
+                </ul>
+                <div class="newsletter ">
+                    <form action="" method="post">
+                        <p>Si quieres estar al tanto de las fechas en las que estarán disponibles y los nuevos cursos que estamos preparando, suscríbete a nuestra newsletter, donde te tendremos al día de las últimas novedades.</p>
+                        <label for="newsletter">Suscríbete a nuestra newsletter</label>
+                        <input type="email" name="newsletter" id="ad-newsletter" placeholder="Tu email" required>
+                        <button class="cta">Suscribirme</button>
+                    </form>
+                </div>
             </div>
-            <img class="accessories" src="img/accesorios.jpg" alt="accesorios de punto">
-        </section>
-        <section class="container" id="kit">
-            <div class="content kit">
-                <h2>Kits</h2>
-                <p>Visita nuestros kits, aquí podrás encontrar todos los materiales necesarios para llevar a cabo las ideas que te proponemos.</p>
-                <button> 
-                    <a href="kits.html">Ver kits</a> 
-                </button>
+            <div class="content contact-section covid-info">
+                <h2><span>Medidas de seguridad</span></h2>
+                <p><span>Para cumplir con el protocolo establecido para Covid-19 hemos adaptado nuestro taller con las medidas de seguridad e higine necesarias:</span><br></p>
+                <p><span>Antes de venir recuerda:</span>  si tienes <span>síntomas</span>, has tenido <span> contacto estrecho con un positivo</span> o estás en <span>cuarentena</span>, no asistas. En estos casos la cancelación será considerada por fuerza mayor y recibirás el reembolso completo del precio del taller.</p>
+                <ul>
+                    <li>Tanto el acceso al local como la salida se realizarán de forma ordenada para evitar aglomeraciones en la entrada.</li>
+                    <li>Es obligatoria la desinfección de manos con gel hidroalcohólico al llegar al local.</li>
+                    <li>El correcto uso de la mascarilla es obligatorio.</li>
+                    <li>Cada asistente tendrá el asiento asignado. Es obligatorio mantener la distribución de la sala para así garantizar la separación de seguridad entre todos.</li>
+                </ul>
+                <p><span>Recuerda que estas medidas son importantes para cuidarnos entre todos y para que podamos disfrutar de un taller seguro.</span><br></p>
             </div>
-            <img  class="kit" src="img/kits.jpg" alt="kits de lana">
-        </section>
-        <section class="container" id="workshop2">
-            <div class="content workshop2">
-                <h2>Talleres</h2>
-                <p>Si quieres aprender nuevas técnicas apúntate a nuestros talleres.</p>
-                <button> 
-                    <a href="workshop.html">Ver talleres</a> 
-                </button>
-            </div>
-            <img class="workshop2" src="img/taller.jpg" alt="lana">
         </section>
     </main>
     <footer class="general-close">
